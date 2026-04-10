@@ -170,15 +170,43 @@
         </div>
     </section>
 
-    <footer class="bg-[#1f2328] text-gray-300 py-12 px-6 md:px-12 mt-auto">
-        <div class="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-                <img src="{{ asset('images/logort.png') }}" alt="Logo RT" class="h-12 mb-4 mx-auto md:mx-0 opacity-90">
-                <p class="text-sm text-gray-400 font-medium">&copy; 2026 Pengurus Rukun Tetangga 01.</p>
+    <footer class="bg-[#1f2328] text-white pt-20 pb-10 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="fade-up reveal">
+                    <img src="{{ asset('images/logort.png') }}" alt="Logo RT" class="h-20 mb-8 opacity-90">
+                    <p class="text-gray-400 font-medium leading-relaxed mb-6">
+                        Website Resmi Layanan RT 01. Media informasi dan transparansi untuk seluruh warga di lingkungan Kawasan RT 1 Banjarbaru.
+                    </p>
+                </div>
+
+                <div class="fade-up reveal">
+                    <h3 class="text-lg font-bold border-l-4 border-[#d4a017] pl-4 mb-8">Alamat & Kontak</h3>
+                    <ul class="space-y-4 text-gray-400 font-medium">
+                        <li class="flex items-start gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#d4a017] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            <span>GQH2+GQM, Kemuning, Banjarbaru Selatan, Banjarbaru City, South Kalimantan 70732</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#d4a017]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <span>(+62) 85751524327</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fade-up reveal">
+                    <h3 class="text-lg font-bold border-l-4 border-[#d4a017] pl-4 mb-8">Tautan Layanan</h3>
+                    <div class="grid grid-cols-2 gap-4 text-gray-400 font-bold text-sm uppercase tracking-wide">
+                        <a href="#profil" class="hover:text-[#d4a017] transition-colors">Profil RT</a>
+                        <a href="#acara" class="hover:text-[#d4a017] transition-colors">Agenda Warga</a>
+                        <a href="#informasi" class="hover:text-[#d4a017] transition-colors">Layanan Info</a>
+                        <a href="#galeri" class="hover:text-[#d4a017] transition-colors">Dokumentasi</a>
+                    </div>
+                </div>
             </div>
-            <div class="text-sm font-medium text-gray-400 text-center md:text-right">
-                Jalan A. Yani Kawasan Pembatuan RT. 01 Kel. Kintapura Kec. Kintap <br class="hidden md:block">
-                Kabupaten Tanah Laut, Kalimantan Selatan 70861
+
+            <div class="border-t border-gray-800 pt-8 text-center md:text-left text-sm font-medium text-gray-500">
+                <p>Website Resmi Layanan RT 01 Banjarbaru &copy; 2026 &middot; Hak Cipta Dilindungi Undang-Undang.</p>
             </div>
         </div>
     </footer>
