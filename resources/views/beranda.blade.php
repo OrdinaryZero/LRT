@@ -56,21 +56,36 @@
             </div>
         </div>
 
-        <div class="hidden md:block">
-            <div class="relative">
-                <button id="menuBtn" class="lg:hidden text-white ml-4">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <circle cx="12" cy="5" r="2"/>
-        <circle cx="12" cy="12" r="2"/>
-        <circle cx="12" cy="19" r="2"/>
-    </svg>
-</button>
-                <input id="searchInput" type="text" placeholder="Cari Berita..." class="py-1.5 pl-4 pr-10 rounded text-gray-700 text-[13px] focus:outline-none w-64 lg:w-72 shadow-sm bg-white/90 border border-transparent transition-all">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 absolute right-3 top-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </div>
-        </div>
+<div class="flex items-center">
+
+    <!-- tombol menu mobile -->
+    <button id="menuBtn" class="lg:hidden text-white ml-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="5" r="2"/>
+            <circle cx="12" cy="12" r="2"/>
+            <circle cx="12" cy="19" r="2"/>
+        </svg>
+    </button>
+
+    <!-- search desktop -->
+    <div class="relative hidden lg:block">
+        <input id="searchInput"
+        type="text"
+        placeholder="Cari Berita..."
+        class="py-1.5 pl-4 pr-10 rounded text-gray-700 text-[13px]
+        focus:outline-none w-64 lg:w-72 shadow-sm bg-white/90
+        border border-transparent transition-all">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4 text-gray-500 absolute right-3 top-2 cursor-pointer"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+    </div>
+
+</div>
     </nav>
 
     <div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-white shadow-xl z-[90] lg:hidden">
@@ -457,15 +472,14 @@ Live Report
         });
     </script>
 
-    <script>
+<script>
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobileMenu");
 
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
 });
-
 </script>
+
 </body>
 </html>
