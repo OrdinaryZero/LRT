@@ -42,7 +42,7 @@
             </a>
 
             <div class="hidden lg:flex items-center gap-5 text-[15px] tracking-wide">
-                <a href="#" class="font-extrabold text-[17px] drop-shadow-sm">Home</a>
+                <a href="#" class="font-extrabold text-[17px] drop-shadow-sm">Beranda</a>
                 <a href="#profil" class="flex items-center gap-1 hover:text-[#d4a017] transition cursor-pointer font-medium">Profile</a>
                 <a href="#acara" class="hover:text-[#d4a017] transition font-medium">Agenda</a>
                 <a href="#lokasi" class="hover:text-[#d4a017] transition font-medium">Lokasi</a>
@@ -58,6 +58,13 @@
 
         <div class="hidden md:block">
             <div class="relative">
+                <button id="menuBtn" class="lg:hidden text-white ml-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <circle cx="12" cy="5" r="2"/>
+        <circle cx="12" cy="12" r="2"/>
+        <circle cx="12" cy="19" r="2"/>
+    </svg>
+</button>
                 <input id="searchInput" type="text" placeholder="Cari Berita..." class="py-1.5 pl-4 pr-10 rounded text-gray-700 text-[13px] focus:outline-none w-64 lg:w-72 shadow-sm bg-white/90 border border-transparent transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 absolute right-3 top-2 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -65,6 +72,31 @@
             </div>
         </div>
     </nav>
+
+    <div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-white shadow-xl z-[90] lg:hidden">
+
+<div class="flex flex-col text-gray-800 font-semibold">
+
+<a href="#" class="px-6 py-4 border-b hover:bg-gray-50">Home</a>
+
+<a href="#profil" class="px-6 py-4 border-b hover:bg-gray-50">Profile</a>
+
+<a href="#acara" class="px-6 py-4 border-b hover:bg-gray-50">Agenda</a>
+
+<a href="#lokasi" class="px-6 py-4 border-b hover:bg-gray-50">Lokasi</a>
+
+<a href="#informasi" class="px-6 py-4 border-b hover:bg-gray-50">Informasi</a>
+
+<a href="#galeri" class="px-6 py-4 border-b hover:bg-gray-50">Galeri</a>
+
+<a href="{{ route('live-report') }}" class="px-6 py-4 text-red-600 font-bold flex items-center gap-2">
+<span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+Live Report
+</a>
+
+</div>
+
+</div>
 
    <section class="relative pt-32 pb-32 px-6 md:px-20 overflow-hidden flex items-center min-h-[560px]">
         
@@ -424,5 +456,16 @@
             fadeElements.forEach(el => observer.observe(el));
         });
     </script>
+
+    <script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+</script>
 </body>
 </html>
