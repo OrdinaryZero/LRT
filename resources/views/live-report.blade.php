@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Report & CCTV - RT 01</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style> body { font-family: 'Plus Jakarta Sans', sans-serif; } </style>
 </head>
@@ -46,13 +47,18 @@
                         </div>
                     </div>
                     
-                    <div class="w-full aspect-video bg-gray-900 rounded-[24px] overflow-hidden shadow-md border border-gray-200 relative group">
+                <div class="w-full aspect-video bg-gray-900 rounded-[24px] overflow-hidden shadow-md border border-gray-200 relative group">
                         
-                        <iframe 
-                            src="https://atcs.banjarmasinkota.go.id/" 
-                            class="absolute top-0 left-0 w-full h-full border-0 z-10" 
-                            allowfullscreen>
-                        </iframe>
+<div class="relative w-full aspect-video">
+    <video
+        id="cctv-video"
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        muted
+        controls
+        playsinline>
+    </video>
+</div>
 
                         <div class="absolute top-0 left-0 w-full h-full z-20 pointer-events-none shadow-[inset_0_0_50px_rgba(0,0,0,0.5)]">
                             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 border-2 border-white/20 rounded-full"></div>
@@ -181,7 +187,6 @@
     </footer>
 
     <script>
-        // Update Jam (Format: 01.47.56 WITA)
         setInterval(() => {
             const date = new Date();
             const timeStr = date.toLocaleTimeString('id-ID', { timeZone: 'Asia/Makassar' }).replace(/:/g, '.');
@@ -209,5 +214,41 @@
             document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
         });
     </script>
+
+
+<!-- cctv nih -->
+<script>
+
+const video = document.getElementById('cctv-video');
+
+const videoSrc = "https://stream-backup.banjarbarukota.go.id/c1_simpang4_arah_cempaka/index.m3u8";
+
+if (Hls.isSupported()) {
+
+    const hls = new Hls({
+        liveSyncDurationCount: 3
+    });
+
+    hls.loadSource(videoSrc);
+    hls.attachMedia(video);
+
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        video.play();
+    });
+
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+
+    video.src = videoSrc;
+
+    video.addEventListener('loadedmetadata', function () {
+        video.play();
+    });
+
+}
+
+</script>
+
+
+
 </body>
 </html>
