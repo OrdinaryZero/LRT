@@ -21,6 +21,22 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+@keyframes galeriSlide {
+
+0% {
+transform: translateX(0);
+}
+
+100% {
+transform: translateX(-50%);
+}
+
+}
+
+.animate-galeri{
+animation: galeriSlide 25s linear infinite;
+}
     </style>
 </head>
 <body class="bg-white min-h-screen">
@@ -188,7 +204,7 @@ Live Report
                 <h3 class="text-xl font-extrabold mt-3 text-gray-900">Aditya Febrian</h3>
             </div>
             <div class="w-full md:w-2/3">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Profil Lingkungan</h2>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">Profil Desa</h2>
                 <p class="text-gray-600 leading-relaxed font-medium mb-6">Lingkungan RT 01 mengedepankan asas kerukunan, gotong royong, dan transparansi. Kami berkomitmen memberikan pelayanan terbaik bagi seluruh warga melalui digitalisasi administrasi, pemberdayaan UMKM, dan pemantauan keamanan terpadu.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
@@ -246,63 +262,95 @@ Live Report
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div class="lg:col-span-2 group cursor-pointer fade-up reveal">
                 <div class="overflow-hidden rounded-[30px] shadow-sm mb-6">
-                    <img src="https://media.gettyimages.com/id/525497435/photo/lok-baintan-floating-market-in-banjarmasin-indonesia.jpg?s=612x612&w=0&k=20&c=iwE898POEcDXANCWxonPct1wflxTv4nbFem7QEM31Rw=" alt="Berita Utama" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                    <img src="{{ asset('images/berita1.jpeg') }}" alt="Berita Utama" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
                 </div>
                 <div class="flex items-center gap-3 text-sm font-bold text-[#d4a017] mb-3 uppercase tracking-widest">
-                    <span>Humas RT</span> <span class="text-gray-300">•</span> <span class="text-gray-500">10 April 2026</span>
+                    <span>Photo Studio</span> <span class="text-gray-300">•</span> <span class="text-gray-500">10 April 2026</span>
                 </div>
-                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight group-hover:text-[#d4a017] transition-colors">Hasil Musyawarah Warga Terkait Penertiban Area Parkir Dan Keamanan Siskamling</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight group-hover:text-[#d4a017] transition-colors">Photo Studio Warga RT01 Banjarbaru </h3>
             </div>
 
             <div class="flex flex-col gap-8">
                 <div class="flex gap-5 group cursor-pointer fade-up reveal">
-                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=300" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
+                    <img src="{{ asset('images/berita2.jpg') }}" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
                     <div class="flex flex-col justify-center">
                         <p class="text-[11px] font-bold text-[#d4a017] uppercase mb-1">Kegiatan</p>
-                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Ibu-Ibu PKK Gelar Bakti Sosial Dan Kerja Bakti Bersama</h4>
+                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Warga berfoto dengan pejabat daerah</h4>
                     </div>
                 </div>
                 <div class="flex gap-5 group cursor-pointer fade-up reveal">
-                    <img src="data:image/jpeg;base64,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" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
+                    <img src="{{ asset('images/berita3.jpg') }}" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
                     <div class="flex flex-col justify-center">
-                        <p class="text-[11px] font-bold text-[#d4a017] uppercase mb-1">Sosialisasi</p>
-                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Penyuluhan Pengelolaan Sampah Rumah Tangga Mandiri</h4>
+                        <p class="text-[11px] font-bold text-[#d4a017] uppercase mb-1">Liburan</p>
+                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Warga RT01 liburan ke Danau Galuh Cempaka</h4>
                     </div>
                 </div>
                 <div class="flex gap-5 group cursor-pointer fade-up reveal">
-                    <img src="https://media.gettyimages.com/id/964254044/photo/siring-floating-market-banjarmasin-indonesia.jpg?s=612x612&w=0&k=20&c=1pskLwQq4L19qmUZbxBoVbwywmk6x7dPc1SxZnjU108=" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
+                    <img src="{{ asset('images/berita4.jpeg') }}" class="w-28 h-28 rounded-2xl object-cover shadow-sm">
                     <div class="flex flex-col justify-center">
-                        <p class="text-[11px] font-bold text-[#d4a017] uppercase mb-1">Keamanan</p>
-                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Pembentukan Satgas Keamanan Menjelang Libur Hari Raya</h4>
+                        <p class="text-[11px] font-bold text-[#d4a017] uppercase mb-1">Agenda</p>
+                        <h4 class="font-bold text-gray-800 leading-snug group-hover:text-[#d4a017] transition-colors">Kegiaatan Berhitung Bersama dengan Dosen Statistika TI UIN Antasari Banjarmasin</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="galeri" class="py-20 bg-gray-50 overflow-hidden scroll-mt-24">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center mb-12 fade-up reveal">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Galeri Warga</h2>
-                <div class="w-16 h-1.5 bg-[#d4a017] mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-up delay-100 reveal">
-                <div class="overflow-hidden rounded-2xl h-64 md:h-80 shadow-sm hover:shadow-xl transition-all">
-                    <img src="https://media.gettyimages.com/id/940237166/photo/banjarmasin-kalimantan-borneo-indonesia-advertising-for-the-local-newspaper-banjarmasin-post.jpg?s=612x612&w=0&k=20&c=0PR5bp3xKqRO_DZFpH7ns825yzCwtOYGmqlk0wsq74Q=" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
-                </div>
-                <div class="overflow-hidden rounded-2xl h-64 md:h-80 shadow-sm hover:shadow-xl transition-all mt-8 md:mt-12">
-                    <img src="https://media.gettyimages.com/id/962229548/photo/activities-at-lok-baintan-floating-market-indonesia.jpg?s=612x612&w=0&k=20&c=MMZxTvrtyr9eEwoyjBTnjNRamA9UeQGagi-B24qrrzo=" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
-                </div>
-                <div class="overflow-hidden rounded-2xl h-64 md:h-80 shadow-sm hover:shadow-xl transition-all">
-                    <img src="https://media.gettyimages.com/id/940236722/photo/banjarmasin-kalimantan-borneo-indonesia-floating-market-and-logging-industry-with-big-wood.jpg?s=612x612&w=0&k=20&c=zRpvIDWRBZEpnXnCN0tb9lKRjhzzno3jBmdcw4ij9nc=" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
-                </div>
-                <div class="overflow-hidden rounded-2xl h-64 md:h-80 shadow-sm hover:shadow-xl transition-all mt-8 md:mt-12">
-                    <img src="https://media.gettyimages.com/id/940236188/photo/banjarmasin-kalimantan-borneo-indonesia-local-seller-shows-jewelry-and-rings-from-traditional.jpg?s=612x612&w=0&k=20&c=KNCgmOWWhG71Q11JNl8skhxz9hVwY4RzwoYiUmCNqT0=" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
-                </div>
-            </div>
+<section id="galeri" class="py-20 bg-gray-50 overflow-hidden scroll-mt-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Galeri Desa</h2>
+            <div class="w-16 h-1.5 bg-[#d4a017] mx-auto rounded-full"></div>
         </div>
-    </section>
+
+        <!-- slider container -->
+        <div class="relative overflow-hidden">
+
+            <div class="flex gap-4 animate-galeri">
+
+                <!-- gambar -->
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo1.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo2.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo5.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo4.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <!-- duplicate agar looping smooth -->
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo1.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo2.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo5.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+                <div class="min-w-[250px] h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="{{ asset('images/photo4.jpg') }}" class="w-full h-full object-cover">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <section id="informasi" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 scroll-mt-24">
         <div class="text-center mb-12 fade-up reveal">

@@ -75,7 +75,7 @@
                             <span class="text-xs text-gray-600 font-bold">4.8</span>
                         </div>
                     </div>
-                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Warung Bu Sri</h4>
+                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Warung Madura</h4>
                     <p class="text-xs text-gray-500 flex items-center gap-1.5 mb-4 font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         Blok A No. 12
@@ -92,7 +92,7 @@
 
             <div class="fade-up opacity-0 translate-y-12 transition-all duration-700 delay-200 bg-white rounded-[24px] shadow-sm hover:shadow-xl overflow-hidden border border-gray-100 group">
                 <div class="h-52 relative overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1556910103-1c02745a872f?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <img src="{{ asset('images/photo3.jpg') }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute top-4 right-4 bg-green-500 text-white text-[10px] font-extrabold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">Buka</div>
                 </div>
                 <div class="p-6">
@@ -103,7 +103,7 @@
                             <span class="text-xs text-gray-600 font-bold">5.0</span>
                         </div>
                     </div>
-                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Dapur Nasi Uduk</h4>
+                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Nasi Uduk Pembatuan</h4>
                     <p class="text-xs text-gray-500 flex items-center gap-1.5 mb-4 font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         Blok C No. 05
@@ -131,7 +131,7 @@
                             <span class="text-xs text-gray-500 font-bold">Baru</span>
                         </div>
                     </div>
-                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Servis AC Pak Yono</h4>
+                    <h4 class="font-extrabold text-xl text-gray-900 mb-1">Servis AC Pak Dika</h4>
                     <p class="text-xs text-gray-500 flex items-center gap-1.5 mb-4 font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         Blok B No. 20
