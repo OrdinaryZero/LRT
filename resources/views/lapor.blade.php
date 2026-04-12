@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <section class="relative z-20 -mt-24 md:-mt-32 px-4 pb-20 flex-grow">
+    <section class="relative z-20 -mt-5 md:-mt-5 px-4 pb-20 flex-grow">
         <div class="fade-up opacity-0 translate-y-12 transition-all duration-[800ms] ease-out delay-100 max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-gray-100 overflow-hidden">
             
             <div class="bg-gray-50 border-b border-gray-100 px-6 py-5 flex items-center justify-between">
