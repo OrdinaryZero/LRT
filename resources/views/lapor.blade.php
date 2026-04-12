@@ -131,7 +131,7 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                         </svg>
                     </div>
-                    <h4 class="text-sm font-bold text-gray-800">1. Tulis Laporan</h4>
+                    <h4 class="text-sm font-bold text-gray-800">1. Input Laporan</h4>
                     <p class="text-xs text-gray-500 mt-1">Kirim keluhan via form.</p>
                 </div>
 
@@ -141,8 +141,8 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h4 class="text-sm font-bold text-gray-800">2. Notifikasi WA</h4>
-                    <p class="text-xs text-gray-500 mt-1">RT menerima pesan instan.</p>
+                    <h4 class="text-sm font-bold text-gray-800">2. Staff </h4>
+                    <p class="text-xs text-gray-500 mt-1">Staff menerima pemberitahuan.</p>
                 </div>
 
                 <div class="fade-up opacity-0 translate-y-12 transition-all duration-[800ms] ease-out delay-[400ms] flex flex-col items-center">
@@ -153,7 +153,7 @@
                         </svg>
                     </div>
                     <h4 class="text-sm font-bold text-gray-800">3. Tindak Lanjut</h4>
-                    <p class="text-xs text-gray-500 mt-1">Laporan diproses pengurus.</p>
+                    <p class="text-xs text-gray-500 mt-1">Laporan diproses staff.</p>
                 </div>
 
                 <div class="fade-up opacity-0 translate-y-12 transition-all duration-[800ms] ease-out delay-[550ms] flex flex-col items-center">

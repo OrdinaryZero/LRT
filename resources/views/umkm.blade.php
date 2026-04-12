@@ -40,8 +40,7 @@
         </div>
     </section>
 
-    <section class="relative z-20 -mt-28 px-4 pb-20 max-w-7xl mx-auto w-full flex-grow">
-        
+    <section class="relative z-20 -mt-1 md:-mt-1 px-4 pb-20 flex-grow">        
         <div class="fade-up opacity-0 translate-y-12 transition-all duration-700 bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] p-4 md:p-6 mb-10 border border-gray-100 flex flex-col md:flex-row gap-4 items-center justify-between">
             
             <div class="relative w-full md:w-1/3">
